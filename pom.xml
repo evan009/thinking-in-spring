@@ -5,12 +5,26 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.evan.thinking.spring</groupId>
+    <!-- spring 学习汇总和总结 -->
     <artifactId>thinking-in-spring</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
+        <!-- 极客时间小马哥 -->
         <module>geekbang-xmg</module>
+        <!-- 极客时间廖雪峰 -->
         <module>geekbang-lxf</module>
+        <!-- IOC容器官方文档 -->
+        <module>context</module>
+        <!-- AOP官方文档 -->
+        <module>aop</module>
+        <!-- MVC官方文档 -->
+        <module>mvc</module>
+        <!-- Spring Boot官方文档 -->
+        <module>boot</module>
+        <!-- Spring Cloud Alibaba 官方文档 -->
+        <module>cloud-alibaba</module>
+
     </modules>
 
     <properties>
@@ -39,7 +53,6 @@
 
 
     </dependencies>
-
     <build>
         <plugins>
             <plugin>
