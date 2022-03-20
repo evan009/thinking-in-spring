@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="user1" class="com.evan.thinking.spring.geekbang.xmg.spring.ioc.model.User" primary="true">
+        <property name="id" value="007"/>
+        <property name="age" value="20"/>
+        <property name="name" value="xiaozhupeiqi"/>
+    </bean>
+
+
+    <bean id="user2" class="com.evan.thinking.spring.geekbang.xmg.spring.ioc.model.User">
+        <property name="id" value="008"/>
+        <property name="age" value="20"/>
+        <property name="name" value="qiaozhi"/>
+    </bean>
+
+    <bean id="superUser" class="com.evan.thinking.spring.geekbang.xmg.spring.ioc.model.SuperUser" parent="user2">
+        <property name="address" value="uk"/>
+    </bean>
+
+    <bean id="objectFactory" class="org.springframework.beans.factory.config.ObjectFactoryCreatingFactoryBean">
+        <property name="targetBeanName" value="superUser"/>
+    </bean>
+
+</beans>
