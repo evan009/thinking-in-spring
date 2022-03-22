@@ -14,14 +14,12 @@
         <module>geekbang-xmg</module>
         <!-- 极客时间廖雪峰 -->
         <module>geekbang-lxf</module>
-        <!-- IOC容器官方文档 -->
-        <module>context</module>
         <!-- AOP官方文档 -->
-        <module>aop</module>
+        <module>official-aop</module>
         <!-- MVC官方文档 -->
-        <module>mvc</module>
+        <module>official-mvc</module>
         <!-- Spring Boot官方文档 -->
-        <module>boot</module>
+        <module>official-boot</module>
         <!-- Spring Cloud Alibaba 官方文档 -->
         <module>cloud-alibaba</module>
 
