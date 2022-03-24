@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <import resource="bean-context.xml"/>
+
+    <bean id="pqFather" class="com.evan.thinking.spring.official.context.model.PeppaPig">
+        <constructor-arg name="name" value="evan"/>
+        <constructor-arg name="age" value="18"/>
+    </bean>
+
+
+    <bean id="pqMother" class="com.evan.thinking.spring.official.context.model.PeppaPig">
+        <property name="name" value="jenny"/>
+        <property name="age" value="18"/>
+    </bean>
+
+</beans>

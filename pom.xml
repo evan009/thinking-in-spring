@@ -10,10 +10,9 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
-        <!-- 极客时间小马哥 -->
-        <module>geekbang-xmg</module>
-        <!-- 极客时间廖雪峰 -->
-        <module>geekbang-lxf</module>
+
+        <!-- Spring容器官方文档 -->
+        <module>official-context</module>
         <!-- AOP官方文档 -->
         <module>official-aop</module>
         <!-- MVC官方文档 -->
@@ -22,6 +21,12 @@
         <module>official-boot</module>
         <!-- Spring Cloud Alibaba 官方文档 -->
         <module>cloud-alibaba</module>
+        <!-- 书本资料 Spring 实战4 -->
+        <module>book-spring-action</module>
+        <!-- 极客时间小马哥 -->
+        <module>geekbang-xmg</module>
+        <!-- 极客时间廖雪峰 -->
+        <module>geekbang-lxf</module>
 
     </modules>
 
