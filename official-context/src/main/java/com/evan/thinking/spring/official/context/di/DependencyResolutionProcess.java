@@ -8,12 +8,12 @@ package com.evan.thinking.spring.official.context.di;
 public class DependencyResolutionProcess {
 
     /**
-     *  <pre>
-     *      顺序：
-     *      1.
-     *      Bean 在容器创建的过程中创建或者在第一次使用的时候创建。
-     *      难点：
-     *  </pre>
+     * <pre>
+     *      lazy-init 默认所有的实例在容器创建中实例化，lazy-init 在第一次访问的时候初始化
+     *      depends-on：指定初始化顺序，和销毁属性
+     *      lookup-method ？ 抽象类获取具体的实现
+     * </pre>
+     * 
      * @param args
      */
     public static void main(String[] args) {

@@ -57,7 +57,7 @@
 
     <!-- 简写增加P命名空间 -->
     <bean id="pqMotherByPNameSpace" class="com.evan.thinking.spring.official.context.model.PeppaPig" p:id="007"
-          p:name="jenny-p" p:age="22">
+          p:name="jenny-p" p:age="22" >
     </bean>
 
 
