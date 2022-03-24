@@ -16,6 +16,8 @@
 
     <modules>
         <module>spring-ioc</module>
+        <module>bean-scope</module>
+        <module>bean-lifycle</module>
     </modules>
     <properties>
         <spring.version>5.2.15.RELEASE</spring.version>
