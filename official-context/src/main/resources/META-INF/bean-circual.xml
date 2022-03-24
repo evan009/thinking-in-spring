@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
+
+
+    <!--    <bean id="pq" class="com.evan.thinking.spring.official.context.model.PeppaPigPq">-->
+    <!--        <constructor-arg name="name" value="evan"/>-->
+    <!--        <constructor-arg name="age" value="18"/>-->
+    <!--        <constructor-arg name="peppaPigQz" ref="qz"/>-->
+    <!--    </bean>-->
+
+
+    <!--    <bean id="qz" class="com.evan.thinking.spring.official.context.model.PeppaPigQz">-->
+    <!--        <constructor-arg name="name" value="evan"/>-->
+    <!--        <constructor-arg name="age" value="18"/>-->
+    <!--        <constructor-arg name="peppaPigPq" ref="pq"/>-->
+    <!--    </bean>-->
+
+
+    <bean id="pqProp" class="com.evan.thinking.spring.official.context.model.PeppaPigPq">
+        <property name="name" value="evan"/>
+        <property name="age" value="18"/>
+        <property name="peppaPigQz" ref="qzProp"/>
+    </bean>
+
+
+    <bean id="qzProp" class="com.evan.thinking.spring.official.context.model.PeppaPigQz">
+        <property name="name" value="evan"/>
+        <property name="age" value="18"/>
+        <property name="peppaPigPq">
+            <!-- ref 存在父子容器应用的关系 -->
+            <ref bean="pqProp"/>
+        </property>
+    </bean>
+
+
+
+</beans>
