@@ -9,8 +9,16 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <groupId>com.evan.thinking.spring</groupId>
-    <artifactId>context</artifactId>
+    <artifactId>official-context</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>pom</packaging>
-    
+
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>5.2.15.RELEASE</version>
+        </dependency>
+    </dependencies>
+
 </project>

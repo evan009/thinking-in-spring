@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <import resource="bean-context.xml"/>
+
+    <bean id="pqFather" class="com.evan.thinking.spring.official.context.model.PeppaPig">
+        <constructor-arg name="name" value="evan"/>
+        <constructor-arg name="age" value="18"/>
+    </bean>
+    <bean id="pqFatherByCNameSpace" class="com.evan.thinking.spring.official.context.model.PeppaPig" c:name="evan"
+          c:age="18">
+
+    </bean>
+
+
+    <bean id="pqMother" class="com.evan.thinking.spring.official.context.model.PeppaPig" depends-on="pq" lazy-init="true">
+        <property name="name" value="jenny"/>
+        <property name="age" value="18"/>
+        <!-- java.util.Properties -->
+        <property name="hobby">
+            <props>
+                <prop key="hobby1">侃大山</prop>
+            </props>
+        </property>
+        <!-- 内部Bean不可对外访问 -->
+        <property name="daughter">
+            <bean id="daughterPig" class="com.evan.thinking.spring.official.context.model.PeppaPigPq" p:id="013"
+                  p:name="佩奇内部佩奇实例" p:age="18"/>
+        </property>
+        <property name="someList">
+            <list>
+                <value>list1</value>
+                <value>list2</value>
+            </list>
+        </property>
+        <property name="someSet">
+            <set>
+                <value>set1</value>
+                <value>set2</value>
+            </set>
+        </property>
+        <property name="someMap">
+            <map>
+                <entry key="key1" value="value1"/>
+            </map>
+        </property>
+        <property name="nullStr">
+            <null/>
+        </property>
+    </bean>
+
+    <!-- 简写增加P命名空间 -->
+    <bean id="pqMotherByPNameSpace" class="com.evan.thinking.spring.official.context.model.PeppaPig" p:id="007"
+          p:name="jenny-p" p:age="22" >
+    </bean>
+
+
+</beans>

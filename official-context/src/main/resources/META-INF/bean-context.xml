@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="pq" class="com.evan.thinking.spring.official.context.model.PeppaPig">
+        <property name="id" value="001"/>
+        <property name="age" value="10"/>
+        <property name="name" value="小猪佩奇"/>
+    </bean>
+
+    <!-- Bean别名 -->
+    <alias name="pq" alias="peppaPig"/>
+
+    <!--    静态方法实例化-->
+    <bean id="qz" class="com.evan.thinking.spring.official.context.model.PeppaPig" factory-method="createPig"/>
+
+
+    <!--实例化工厂方法实例化-->
+    <bean id="sx" factory-bean="pigFactory" factory-method="createPig"/>
+    <bean id="pigFactory" class="com.evan.thinking.spring.official.context.model.PeppaPigFactory"/>
+
+    <!--FactoryBean 实例化-->
+    <bean id="pdl" class="com.evan.thinking.spring.official.context.model.PeppaPigFactoryBean"/>
+
+</beans>
