@@ -8,7 +8,7 @@ import com.evan.thinking.spring.geekbang.xmg.spring.ioc.bean.definition.factory.
 import com.evan.thinking.spring.geekbang.xmg.spring.ioc.bean.definition.factory.UserFactory;
 
 /**
- * @desc: 单体Bean注册实例
+ * @desc: 注册外部Bean
  * @author: evan
  * @date: 2022/3/20
  */
