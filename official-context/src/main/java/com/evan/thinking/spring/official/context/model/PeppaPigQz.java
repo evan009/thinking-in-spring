@@ -28,14 +28,10 @@ public class PeppaPigQz {
         this.peppaPigPq = peppaPigPq;
     }
 
-
     @Override
     public String toString() {
-        return "PeppaPigQz{" +
-                "id='" + id + '\'' +
-                ", name='" + name + '\'' +
-                ", age=" + age +
-                ", peppaPigPq=" + peppaPigPq +
-                '}';
+        return "PeppaPigQz{" + "id='" + id + '\'' + ", name='" + name + '\'' + ", age=" + age + ", peppaPigPq="
+            + peppaPigPq + '}';
     }
+
 }
