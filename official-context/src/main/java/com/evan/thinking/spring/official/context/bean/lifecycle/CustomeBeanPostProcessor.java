@@ -1,4 +1,4 @@
-package com.evan.thinking.spring.official.context.bean.scop;
+package com.evan.thinking.spring.official.context.bean.lifecycle;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;

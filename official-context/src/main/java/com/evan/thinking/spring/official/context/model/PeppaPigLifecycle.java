@@ -1,6 +1,12 @@
 package com.evan.thinking.spring.official.context.model;
 
+import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.BeanClassLoaderAware;
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.BeanFactoryAware;
 import org.springframework.beans.factory.BeanNameAware;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -12,7 +18,8 @@ import lombok.NoArgsConstructor;
  */
 @Data
 @NoArgsConstructor
-public class PeppaPigLifecycle implements BeanNameAware {
+public class PeppaPigLifecycle
+    implements BeanNameAware, ApplicationContextAware, BeanFactoryAware, BeanClassLoaderAware {
 
     private String id;
 
@@ -22,6 +29,11 @@ public class PeppaPigLifecycle implements BeanNameAware {
 
     private String beanName;
 
+    private BeanFactory beanFactory;
+
+    private ApplicationContext applicationContext;
+
+    private ClassLoader classLoader;
 
     public PeppaPigLifecycle(String name, Integer age, PeppaPigPq peppaPigPq) {
         this.name = name;
@@ -33,4 +45,18 @@ public class PeppaPigLifecycle implements BeanNameAware {
         this.beanName = name;
     }
 
+    @Override
+    public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
+        this.beanFactory = beanFactory;
+    }
+
+    @Override
+    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+        this.applicationContext = applicationContext;
+    }
+
+    @Override
+    public void setBeanClassLoader(ClassLoader classLoader) {
+        this.classLoader = classLoader;
+    }
 }

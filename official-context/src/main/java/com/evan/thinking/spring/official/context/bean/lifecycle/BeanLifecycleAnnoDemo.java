@@ -1,4 +1,4 @@
-package com.evan.thinking.spring.official.context.bean.scop;
+package com.evan.thinking.spring.official.context.bean.lifecycle;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Bean;
@@ -30,6 +30,11 @@ public class BeanLifecycleAnnoDemo {
      *
      *     applicationContext.registerShutdownHook() == applicationContext.close();
      *
+     *     Aware接口 可以接口注入关联  +  @Autowried依赖注入
+     *     在普通 bean 属性填充之后，在诸如InitializingBean、 fterPropertiesSet 或自定义 init-method 等初始化回调之前调用该回调。
+     *
+     *
+     *
      * </pre>
      * 
      * @param args
@@ -39,8 +44,11 @@ public class BeanLifecycleAnnoDemo {
         applicationContext.register(BeanLifecycleAnnoDemo.class);
         applicationContext.getBeanFactory().addBeanPostProcessor(new CustomeBeanPostProcessor());
         applicationContext.refresh();
+        // demo 初始化
         System.out.println(applicationContext.getBean(PeppaPigPq.class));
+        // demo BeanPostProcessor
         System.out.println(applicationContext.getBean(PeppaPigQz.class));
+        // demo Aware
         System.out.println(applicationContext.getBean(PeppaPigLifecycle.class));
         applicationContext.close();
         applicationContext.registerShutdownHook();
