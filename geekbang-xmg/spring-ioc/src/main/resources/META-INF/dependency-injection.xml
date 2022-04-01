@@ -17,4 +17,25 @@
         <!--        </property>-->
     </bean>
 
+
+    <!-- 构造器注入 -->
+    <bean id="userHolder" class="com.evan.thinking.spring.geekbang.xmg.spring.ioc.model.UserHolder">
+        <property name="user" ref="user1"/>
+    </bean>
+
+
+    <!-- 自动装配 -->
+    <bean id="userHolderAutowireByName" class="com.evan.thinking.spring.geekbang.xmg.spring.ioc.model.UserHolder"
+          autowire="byName"/>
+    <bean id="userHolderAutowireByType" class="com.evan.thinking.spring.geekbang.xmg.spring.ioc.model.UserHolder"
+          autowire="byType"/>
+    <bean id="userHolderAutowireByConstructor" class="com.evan.thinking.spring.geekbang.xmg.spring.ioc.model.UserHolder"
+          autowire="constructor"/>
+
+    <!-- 构造器注入 -->
+    <bean id="userHolderConstructor" class="com.evan.thinking.spring.geekbang.xmg.spring.ioc.model.UserHolder">
+        <constructor-arg name="user" ref="user1"/>
+    </bean>
+
+
 </beans>
