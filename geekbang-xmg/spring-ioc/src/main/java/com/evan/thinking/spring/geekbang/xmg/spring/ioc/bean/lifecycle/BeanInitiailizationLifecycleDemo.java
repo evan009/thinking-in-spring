@@ -34,9 +34,6 @@ public class BeanInitiailizationLifecycleDemo {
         System.out.println("bean gc");
         userLifeCycle = null;
         System.gc();
-//        Thread.sleep(2000);
-//        System.gc();
-//        System.out.println(userLifeCycle);
 
     }
 

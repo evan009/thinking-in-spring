@@ -15,7 +15,10 @@
 
 
     <modules>
+        <!-- Spring IOC 容器 -->
         <module>spring-ioc</module>
+        <!-- Bean 元信息  -->
+        <module>bean-metadata</module>
     </modules>
     <properties>
         <spring.version>5.2.15.RELEASE</spring.version>
