@@ -9,7 +9,7 @@ import org.springframework.util.ObjectUtils;
 import com.evan.thinking.spring.geekbang.xmg.spring.ioc.model.SuperUser;
 import com.evan.thinking.spring.geekbang.xmg.spring.ioc.model.User;
 
-public class CustomeInstantiationAwareBeanPostProcessor implements InstantiationAwareBeanPostProcessor {
+public class CustomInstantiationAwareBeanPostProcessor implements InstantiationAwareBeanPostProcessor {
 
     /**
      * 实例化之前构建实例对象
