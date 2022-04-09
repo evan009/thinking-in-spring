@@ -19,6 +19,8 @@
         <module>spring-ioc</module>
         <!-- Bean 元信息  -->
         <module>bean-metadata</module>
+        <!-- resource 信息  -->
+        <module>resource</module>
     </modules>
     <properties>
         <spring.version>5.2.15.RELEASE</spring.version>
