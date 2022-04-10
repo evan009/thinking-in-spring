@@ -23,6 +23,8 @@
         <module>resource</module>
         <!-- 国际化 -->
         <module>i18n</module>
+        <!-- 校验 -->
+        <module>validation</module>
     </modules>
     <properties>
         <spring.version>5.2.15.RELEASE</spring.version>
