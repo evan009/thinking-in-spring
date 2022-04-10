@@ -21,6 +21,8 @@
         <module>bean-metadata</module>
         <!-- resource 信息  -->
         <module>resource</module>
+        <!-- 国际化 -->
+        <module>i18n</module>
     </modules>
     <properties>
         <spring.version>5.2.15.RELEASE</spring.version>
