@@ -27,6 +27,8 @@
         <module>validation</module>
         <!-- 数据绑定 -->
         <module>data-binder</module>
+        <!-- 类型转换 -->
+        <module>conversion</module>
     </modules>
     <properties>
         <spring.version>5.2.15.RELEASE</spring.version>

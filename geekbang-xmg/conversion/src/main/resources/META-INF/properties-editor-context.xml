@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+        xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
+
+
+    <bean id="customEditorConfigurer" class="org.springframework.beans.factory.config.CustomEditorConfigurer">
+        <property name="propertyEditorRegistrars">
+            <list>
+                <bean class="com.evan.thinking.spring.geekbang.xmg.conversion.CustomPropertyEditorRegistrar"/>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="conversionService" class="org.springframework.context.support.ConversionServiceFactoryBean">
+        <property name="converters">
+            <bean class="com.evan.thinking.spring.geekbang.xmg.conversion.CustomConverter"/>
+        </property>
+    </bean>
+
+
+    <bean id=" user" class="com.evan.thinking.spring.geekbang.xmg.spring.ioc.model.User">
+        <property name="id" value="220411"/>
+        <property name="name" value="evan"/>
+        <property name="context">
+            <props>
+                <prop key="id">220411</prop>
+                <prop key="name">evan</prop>
+            </props>
+        </property>
+        <property name="contextAsText" ref="contextProp"/>
+    </bean>
+
+    <util:properties id="contextProp">
+        <prop key="id">220411</prop>
+        <prop key="name">evan</prop>
+    </util:properties>
+
+</beans>
