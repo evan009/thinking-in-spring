@@ -13,6 +13,8 @@ public class User {
 
     private Integer age;
 
+    private Address addressAggr;
+
     public static User createUser() {
         User user = new User();
         user.setId("012");
