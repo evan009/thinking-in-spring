@@ -31,6 +31,8 @@
         <module>conversion</module>
         <!-- 泛型 -->
         <module>generic</module>
+        <!-- 事件 -->
+        <module>event</module>
     </modules>
     <properties>
         <spring.version>5.2.15.RELEASE</spring.version>
