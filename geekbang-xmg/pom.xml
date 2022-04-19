@@ -33,6 +33,8 @@
         <module>generic</module>
         <!-- 事件 -->
         <module>event</module>
+        <!-- 注解 -->
+        <module>annotation</module>
     </modules>
     <properties>
         <spring.version>5.2.15.RELEASE</spring.version>
