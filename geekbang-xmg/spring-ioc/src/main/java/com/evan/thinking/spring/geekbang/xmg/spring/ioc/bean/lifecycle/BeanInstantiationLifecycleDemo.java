@@ -1,12 +1,8 @@
 package com.evan.thinking.spring.geekbang.xmg.spring.ioc.bean.lifecycle;
 
-import org.springframework.beans.BeansException;
-import org.springframework.beans.factory.config.InstantiationAwareBeanPostProcessor;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
-import org.springframework.util.ObjectUtils;
 
-import com.evan.thinking.spring.geekbang.xmg.spring.ioc.model.SuperUser;
 import com.evan.thinking.spring.geekbang.xmg.spring.ioc.model.User;
 
 /**
@@ -18,7 +14,7 @@ public class BeanInstantiationLifecycleDemo {
 
     public static void main(String[] args) {
         DefaultListableBeanFactory beanFactory = new DefaultListableBeanFactory();
-        beanFactory.addBeanPostProcessor(new CustomeInstantiationAwareBeanPostProcessor());
+        beanFactory.addBeanPostProcessor(new CustomInstantiationAwareBeanPostProcessor());
         XmlBeanDefinitionReader beanDefinitionReader = new XmlBeanDefinitionReader(beanFactory);
         int beanNum = beanDefinitionReader.loadBeanDefinitions("META-INF/dependency-lookup.xml");
         System.out.println(beanNum);

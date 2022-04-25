@@ -11,11 +11,11 @@ public class BeanGarbageCollectionDemo {
 
     public static void main(String[] args) throws InterruptedException {
         AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext();
-        applicationContext.register(BeanInitializationDemo.Config.class);
+        applicationContext.register(ConfigUserBean.class);
         applicationContext.refresh();
         System.out.println("容器已启动...");
 
-        System.out.println(applicationContext.getBean(BeanInitializationDemo.ConfigUser.class));
+        System.out.println(applicationContext.getBean(ConfigUser.class));
         System.out.println("容器准备关闭...");
         applicationContext.close();
         System.out.println("容器已关闭...");

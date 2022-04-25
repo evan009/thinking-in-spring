@@ -1,5 +1,7 @@
 package com.evan.thinking.spring.geekbang.xmg.spring.ioc.model;
 
+import java.util.Properties;
+
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -12,6 +14,13 @@ public class User {
     private String name;
 
     private Integer age;
+
+    private Address addressAggr;
+
+    private Properties context;
+
+    private String contextAsText;
+
 
     public static User createUser() {
         User user = new User();
