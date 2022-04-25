@@ -50,6 +50,7 @@ public class BeanLifecycleAnnoDemo {
         System.out.println(applicationContext.getBean(PeppaPigQz.class));
         // demo Aware
         System.out.println(applicationContext.getBean(PeppaPigLifecycle.class));
+
         applicationContext.close();
         applicationContext.registerShutdownHook();
     }
