@@ -35,6 +35,8 @@
         <module>event</module>
         <!-- 注解 -->
         <module>annotation</module>
+        <!-- 环境变量 -->
+        <module>enviorment</module>
     </modules>
     <properties>
         <spring.version>5.2.15.RELEASE</spring.version>
