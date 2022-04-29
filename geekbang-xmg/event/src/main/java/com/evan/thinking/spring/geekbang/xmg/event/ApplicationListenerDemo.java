@@ -28,12 +28,16 @@ public class ApplicationListenerDemo {
                 System.out.println("接受到的事件" + event);
             }
         });
-
-        applicationContext.register();
+        applicationContext.registerShutdownHook();
+        Runtime.getRuntime().addShutdownHook(new Thread() {
+            @Override
+            public void run() {
+                System.out.println(Thread.currentThread().getName() + "JVM 容器关闭触发钩子事件");
+            }
+        });
         applicationContext.refresh();
         // applicationContext.start();
         // applicationContext.stop();
-        applicationContext.close();
 
     }
 
