@@ -36,7 +36,10 @@
         <!-- 注解 -->
         <module>annotation</module>
         <!-- 环境变量 -->
-        <module>enviorment</module>
+        <module>environment</module>
+        <!-- 容器声明周期 -->
+        <module>context-lifecycle</module>
+        <module>questions</module>
     </modules>
     <properties>
         <spring.version>5.2.15.RELEASE</spring.version>
