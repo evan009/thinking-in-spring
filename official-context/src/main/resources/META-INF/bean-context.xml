@@ -7,7 +7,7 @@
 
     <context:component-scan base-package="com.evan.thinking.spring.official.context.analysis"/>
 
-    <bean id="pq" class="com.evan.thinking.spring.official.context.model.PeppaPig">
+    <bean id="pq" class="com.evan.thinking.spring.official.context.model.PeppaPig" primary="true">
         <property name="id" value="001"/>
         <property name="age" value="10"/>
         <property name="name" value="小猪佩奇"/>
