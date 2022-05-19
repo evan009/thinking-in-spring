@@ -16,27 +16,30 @@
 
     <modules>
         <!-- Spring IOC 容器 -->
-        <module>spring-ioc</module>
+        <module>geekbang-xmg-spring-ioc</module>
         <!-- Bean 元信息  -->
-        <module>bean-metadata</module>
+        <module>geekbang-xmg-bean-metadata</module>
         <!-- resource 信息  -->
-        <module>resource</module>
+        <module>geekbang-xmg-resource</module>
         <!-- 国际化 -->
-        <module>i18n</module>
+        <module>geekbang-xmg-i18n</module>
         <!-- 校验 -->
-        <module>validation</module>
+        <module>geekbang-xmg-validation</module>
         <!-- 数据绑定 -->
-        <module>data-binder</module>
+        <module>geekbang-xmg-data-binder</module>
         <!-- 类型转换 -->
-        <module>conversion</module>
+        <module>geekbang-xmg-conversion</module>
         <!-- 泛型 -->
-        <module>generic</module>
+        <module>geekbang-xmg-generic</module>
         <!-- 事件 -->
-        <module>event</module>
+        <module>geekbang-xmg-event</module>
         <!-- 注解 -->
-        <module>annotation</module>
+        <module>geekbang-xmg-annotation</module>
         <!-- 环境变量 -->
-        <module>enviorment</module>
+        <module>geekbang-xmg-environment</module>
+        <!-- 容器声明周期 -->
+        <module>geekbang-xmg-context-lifecycle</module>
+        <module>geekbang-xmg-questions</module>
     </modules>
     <properties>
         <spring.version>5.2.15.RELEASE</spring.version>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.beans.factory.parsing.ComponentDefinition</OriginalElement>
+  <nodes>
+    <node x="15.0" y="348.0">org.springframework.aop.config.AspectComponentDefinition</node>
+    <node x="361.0" y="174.0">org.springframework.beans.factory.parsing.AbstractComponentDefinition</node>
+    <node x="634.25" y="0.0">org.springframework.beans.BeanMetadataElement</node>
+    <node x="463.75" y="87.0">org.springframework.beans.factory.parsing.ComponentDefinition</node>
+    <node x="712.0" y="174.0">org.springframework.beans.factory.parsing.BeanComponentDefinition</node>
+    <node x="0.0" y="261.0">org.springframework.beans.factory.parsing.CompositeComponentDefinition</node>
+    <node x="361.0" y="261.0">org.springframework.aop.config.PointcutComponentDefinition</node>
+    <node x="712.0" y="261.0">org.springframework.aop.config.AdvisorComponentDefinition</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.beans.factory.parsing.BeanComponentDefinition" target="org.springframework.beans.BeanMetadataElement">
+      <point x="72.75" y="-18.5" />
+      <point x="930.25" y="62.0" />
+      <point x="822.5" y="62.0" />
+      <point x="62.75" y="18.5" />
+    </edge>
+    <edge source="org.springframework.aop.config.AdvisorComponentDefinition" target="org.springframework.beans.factory.parsing.AbstractComponentDefinition">
+      <point x="0.0" y="-18.5" />
+      <point x="872.5" y="236.0" />
+      <point x="636.8333333333333" y="236.0" />
+      <point x="110.33333333333326" y="18.5" />
+    </edge>
+    <edge source="org.springframework.aop.config.PointcutComponentDefinition" target="org.springframework.beans.factory.parsing.AbstractComponentDefinition">
+      <point x="0.0" y="-18.5" />
+      <point x="0.0" y="18.5" />
+    </edge>
+    <edge source="org.springframework.beans.factory.parsing.ComponentDefinition" target="org.springframework.beans.BeanMetadataElement">
+      <point x="0.0" y="-18.5" />
+      <point x="589.25" y="62.0" />
+      <point x="697.0" y="62.0" />
+      <point x="-62.75" y="18.5" />
+    </edge>
+    <edge source="org.springframework.beans.factory.parsing.AbstractComponentDefinition" target="org.springframework.beans.factory.parsing.ComponentDefinition">
+      <point x="0.0" y="-18.5" />
+      <point x="-62.75" y="18.5" />
+    </edge>
+    <edge source="org.springframework.aop.config.AspectComponentDefinition" target="org.springframework.beans.factory.parsing.CompositeComponentDefinition">
+      <point x="0.0" y="-18.5" />
+      <point x="0.0" y="18.5" />
+    </edge>
+    <edge source="org.springframework.beans.factory.parsing.CompositeComponentDefinition" target="org.springframework.beans.factory.parsing.AbstractComponentDefinition">
+      <point x="0.0" y="-18.5" />
+      <point x="170.5" y="236.0" />
+      <point x="416.16666666666663" y="236.0" />
+      <point x="-110.33333333333331" y="18.5" />
+    </edge>
+    <edge source="org.springframework.beans.factory.parsing.BeanComponentDefinition" target="org.springframework.beans.factory.parsing.ComponentDefinition">
+      <point x="-72.75" y="-18.5" />
+      <point x="784.75" y="149.0" />
+      <point x="652.0" y="149.0" />
+      <point x="62.75" y="18.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="426.5" y="105.5" />
+  <SelectedNodes>
+    <node>org.springframework.beans.factory.parsing.ComponentDefinition</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
