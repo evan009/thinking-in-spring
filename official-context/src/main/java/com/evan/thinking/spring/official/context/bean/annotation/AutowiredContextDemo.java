@@ -3,6 +3,11 @@ package com.evan.thinking.spring.official.context.bean.annotation;
 import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+/**
+ * @desc: Autowired 注解示例
+ * @author: evan
+ * @date: 2022/5/18
+ */
 public class AutowiredContextDemo {
 
     public static void main(String[] args) {
@@ -21,9 +26,7 @@ public class AutowiredContextDemo {
         System.out.println(autowiredPeppaPig.peppaPigMap);
         System.out.println(autowiredPeppaPig.allObject);
 
-
         context.close();
-
 
     }
 
